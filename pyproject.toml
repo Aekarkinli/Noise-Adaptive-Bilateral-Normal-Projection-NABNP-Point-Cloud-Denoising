@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nabnp-point-cloud-denoising"
+version = "1.0.0"
+description = "Noise-Adaptive Bilateral Normal Projection for feature-preserving point cloud denoising."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "scipy>=1.10",
+    "pandas>=1.5",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
